@@ -23,7 +23,7 @@
                         </div>
                     </div>
                     <div class="product-content">
-                        <h3><a href="single-product.html">{{ $sell->getproduct->product_name }}</a></h3>
+                        <h3><a href="{{ url('products')/$sell->getproduct->product_slug }}">{{ $sell->getproduct->product_name }}</a></h3>
                         <p class="pull-left">${{ $sell->getproduct->product_price }}
 
                         </p>
